@@ -1,0 +1,2 @@
+language = "python3"
+run = "java -jar Lavalink.jar"

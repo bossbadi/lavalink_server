@@ -7,6 +7,6 @@ bot = commands.Bot(command_prefix='!')
 @bot.event
 async def on_ready():
   print(f'{bot.user} has logged in.')
-  bot.load_extension('cogs.music2')
+  bot.load_extension('cogs.music')
 
-bot.run()
+bot.run(os.getenv('TOKEN'))
