@@ -1,0 +1,7 @@
+{
+    "name": "Lavalink Server",
+    "description": "A Lavalink server ready to be deployed to Heroku or Repl.it",
+    "repository": "https://github.com/bossbadi/lavalink_server",
+    "logo": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+    "keywords": ["heroku", "lavalink", "replit"]
+}
