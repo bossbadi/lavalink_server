@@ -15,7 +15,7 @@ Install dependencies
 ```bash
 sudo apt update
 sudo apt install -y git  # for cloning the repository
-sudo apt install -y openjdk-13-jre  # for running Lavalink
+sudo apt install -y openjdk-21-jre  # for running Lavalink
 ```
 
 Clone the repository
@@ -40,7 +40,7 @@ Install dependencies
 ```bash
 sudo apt update
 sudo apt install -y git  # for cloning the repository
-sudo apt install -y openjdk-13-jre  # for running Lavalink
+sudo apt install -y openjdk-21-jre  # for running Lavalink
 sudo apt install -y supervisor  # for monitoring the server
 ```
 
