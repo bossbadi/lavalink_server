@@ -5,10 +5,14 @@ spring:
   main:
     banner-mode: log
 lavalink:
+  plugins:
+  # Replace VERSION with the current version as shown by the Releases tab or a long commit hash for snapshots.
+  - dependency: "dev.lavalink.youtube:youtube-plugin:1.4.0"
+    snapshot: false # Set to true if you want to use a snapshot version.
   server:
     password: "youshallnotpass"
     sources:
-      youtube: true
+      youtube: false
       bandcamp: true
       soundcloud: true
       twitch: true
@@ -21,6 +25,24 @@ lavalink:
     youtubeSearchEnabled: true
     soundcloudSearchEnabled: true
     gc-warnings: true
+
+youtube:
+  enabled: true
+  allowSearch: true
+  allowDirectVideoIds: true  
+  allowDirectPlaylistIds: true  
+  clients:
+    - MUSIC
+    - WEB
+    - TVHTML5EMBEDDED
+    - IOS
+    - MEDIA_CONNECT
+  WEB:
+    playback: true
+  TVHTML5EMBEDDED:
+    playlistLoading: true 
+    videoLoading: true
+    searching: true
 
 metrics:
   prometheus:
